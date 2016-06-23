@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+        <title>一个兴趣使然的表情站</title>
+        <link rel="stylesheet/less" href="styles/index.less">
+    </head>
+    <body>
+        <site-header></site-header>
+        <div ng-view></div>
+
+
+<!-- libs -->
+        <script x-dev src="libs/less/2.5.3/less.min.js"></script>
+
+        <script x-pick-lib src="libs/angular-1.5.7/angular.min.js"></script>
+        <script x-pick-lib src="libs/angular-1.5.7/angular-route.min.js"></script>
+        <script x-pick-lib src="libs/angular-1.5.7/angular-cookies.min.js"></script>
+        <script x-pick-lib src="libs/angular-1.5.7/angular-sanitize.min.js"></script>
+        <script x-pick-lib src="libs/angular-1.5.7/angular-touch.min.js"></script>
+
+        <script x-dev src="libs/coffee-script/1.10.0/coffee-script.min.js"></script>
+        <script x-pick-lib src="libs/lodash/3.10.1/lodash.min.js"></script>
+
+
+<!-- functions -->
+        <script x-pick-main type="text/coffeescript" data-src="scripts/module.coffee"></script>
+        <script x-pick-main type="text/coffeescript" data-src="scripts/lodash-enhancement.coffee"></script>
+        <script x-pick-main type="text/coffeescript" data-src="ajax/api.coffee"></script>
+        
+
+<!-- controllers -->
+        <script x-pick-main type="text/coffeescript" data-src="controller/header/header.ctrl.coffee"></script>
+        <script x-pick-main type="text/coffeescript" data-src="controller/homepage/homepage.ctrl.coffee"></script>
+
+<!-- router -->
+        <script x-pick-main type="text/coffeescript" data-src="router/router.coffee"></script>
+
+    </body>
+</html>
